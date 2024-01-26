@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px; /* Añadido para un mejor espaciado */
+}
+
+h1 {
+    font-size: 52px;
+    color: white;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    font-size: 36px;
+    color: #c27624;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    color: white;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    display: block; /* Añadido para un mejor espaciado entre enlaces */
+}
+
+
+a:hover {
+    color: #007BFF;
+}
+
+/* Estilos adicionales para dispositivos más pequeños */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para los logos */
+.logos {
+    position: fixed;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    width: 50px;
+    height: 50px;
+    margin: 0 auto; /* Centra los logos horizontalmente */
+    left: 0;
+    right: 0;
+}
+
+/* Estilos específicos para cada logo */
+.logos.whatsapp {
+    margin-left: 20px; /* Ajusta el margen derecho para separar los logos */
+}
+
+.logos.gmail {
+    margin-right: 20px; /* Ajusta el margen izquierdo para separar los logos */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px;
+}
+
+.card {
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #007BFF;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card h3 {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 25px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 8px;
+    margin: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card p {
+    color: #fff;
+}
+
+.btn {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 25px; /* Ajusta el espacio aquí */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Añadido para el espacio vertical */
+    box-shadow: 0 4px 8px #007BFF; /* Añadido para la sombra */
+}
+
+.btn:hover {
+    background-color: #007BFF;
+}
+
+.profile-image {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: 150px; /* Ajusta el tamaño según tus necesidades */
+    border-radius: 50%; /* Hace la imagen circular */
+    margin-right: 10px; /* Añade un margen derecho para separar la imagen del texto */
+}
+
