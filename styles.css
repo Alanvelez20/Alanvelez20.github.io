@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
     text-align: center;
     padding: 20px; /* Añadido para un mejor espaciado */
@@ -84,8 +84,9 @@ a:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+
 }
 
 .card {
@@ -93,7 +94,21 @@ a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px #007BFF;
 }
-
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .card-content {
     padding: 10px;
 }
@@ -130,6 +145,7 @@ a:hover {
 .btn:hover {
     background-color: #007BFF;
 }
+
 
 .profile-image {
     width: 150px; /* Ajusta el tamaño según tus necesidades */
